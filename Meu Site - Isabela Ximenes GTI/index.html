@@ -1,21 +1,122 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home - IsX Consulting</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+        <style>
+            /* CSS */
+            body {
+        margin: 0;
+        font-family: 'Montserrat';
+        background-color: #f4f4f4;
+    }
+
+    /* Estilo para o container principal */
+    #site {
+        width: 80%;
+        margin: auto;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    /* Seção topo */
+    #topo {
+        text-align: center;
+        padding: 20px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+
+    #topo h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    #topo h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    #topo img {
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+
+    /* Conteúdo principal */
+    .conteudo {
+        margin: 20px 0;
+    }
+
+    .conteudo h3 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #333333;
+    }
+
+    .conteudo ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .conteudo ul li {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #555;
+        padding-left: 25px;
+        position: relative;
+    }
+
+    .conteudo ul li::before {
+        content: "💡";
+        position: absolute;
+        left: 0;
+        color: #0a74da;
+    }
+
+    /* Rodapé */
+    #rodape {
+        text-align: left;
+        padding: 15px;
+        background-color: #4F0057;
+    }
+
+    #rodape a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 0.9em;
+        margin: 5px;
+        display: inline-block;
+    }
+
+    #rodape a:hover {
+        text-decoration: underline;
+            } 
+        </style>
     </head>
     <body>
-        <h1>Transformamos Empresas com Inovação e Tecnologia</h1>
-        <h2>Na IsX Consulting, unimos tecnologia e metodologias ágeis para tornar sua empresa mais eficiente e preparada para o futuro.</h2>
-        <img src="assets/Free.png" alt="IsX Consulting" width="300px" height="300px">
-        <h3>Por que Escolher a IsX?</h3>
-        <ul>
-            <li>💡Mais eficiência e eficácia nos processos</li>
-            <li>💡Transformação Digital sem complicação</li>
-            <li>💡Aplicação prática de metodologias ágeis</li>
-            <li>💡Estratégia personalizada para o seu negócio</li>
-        </ul>
-        <a href="servicos.html">Conheça nossos Serviços</a> <br>
-        <a href="cases.html">Conheça nossos Cases</a> <br>
-        <a href="https://www.linkedin.com/in/isabelaximenes/">Entre em contato conosco!</a>
+        <div id="site">
+            <section id="topo">
+                <h1>Transformamos Empresas com Inovação e Tecnologia</h1>
+                <h2>Na IsX Consulting, unimos tecnologia e metodologias ágeis para tornar sua empresa mais eficiente e preparada para o futuro.</h2>
+                <img src="assets/Free.png" alt="IsX Consulting" width="300px" height="300px">
+            </section>
+            <section class="conteudo">
+                <h3>Por que Escolher a IsX?</h3>
+                <ul>
+                    <li>Mais eficiência e eficácia nos processos</li>
+                    <li>Transformação Digital sem complicação</li>
+                    <li>Aplicação prática de metodologias ágeis</li>
+                    <li>Estratégia personalizada para o seu negócio</li>
+                </ul>
+            </section>
+            <section id="rodape">
+                <a href="servicos.html">Conheça nossos Serviços</a> <br>
+                <a href="cases.html">Conheça nossos Cases</a> <br>
+                <a href="https://www.linkedin.com/in/isabelaximenes/">Entre em contato conosco!</a>
+            </section>
+    </div>
     </body>
 </html>
