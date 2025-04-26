@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cases - IsX Consulting</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+        <style>
+            /* CSS */
+            body {
+                margin: 0;
+                font-family: 'Montserrat';
+                background-color: #f4f4f4;
+            }
+
+            /* Estilo para o container principal */
+            #site {
+                width: 80%;
+                margin: auto;
+                background-color: #ffffff;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+            }
+
+            /* Seção topo */
+            #topo {
+                text-align: center;
+                padding: 50px 20px;
+                background: linear-gradient(135deg, #F9F9F9 0%, #ffffff 100%);
+                color: #333;
+                border-bottom: 4px solid #4F0057;
+                border-radius: 0 0 12px 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            }
+
+            #topo h1 {
+                font-size: 2.4em;
+                margin-bottom: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 900;
+                color: #4F0057;
+                letter-spacing: -1px;
+            }
+
+            #topo h2 {
+                font-size: 1.4em;
+                margin-bottom: 15px;
+                font-weight: 500;
+                color: #555;
+            }
+
+            #topo p {
+                font-size: 1.05em;
+                max-width: 700px;
+                margin: 0 auto;
+                line-height: 1.6;
+                color: #666;
+            }
+
+            #topo img {
+                margin-top: 25px;
+                border-radius: 12px;
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Conteúdo principal */
+            .conteudo {
+                margin: 20px 0;
+            }
+
+            .conteudo h3 {
+                font-size: 1.8em;
+                margin-bottom: 15px;
+                color: #333333;
+            }
+
+            .conteudo ol {
+                counter-reset: item;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .conteudo ol li {
+                counter-increment: item;
+                margin-bottom: 30px;
+                padding-left: 50px;
+                position: relative;
+                font-size: 1.1em;
+                color: #333;
+                background-color: #f9f9f9;
+                border-left: 4px solid #4F0057;
+                border-radius: 8px;
+                padding: 20px 20px 20px 50px;
+            }
+
+            /* Animação no número dentro do círculo */
+            .conteudo ol li::before {
+                content: counter(item);
+                position: absolute;
+                left: 15px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                background-color: #4F0057;
+                color: white;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1em;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+                transition: all 0.3s ease; /* Animação suave */
+            }
+
+            /* Efeito de aumentar o círculo ao passar o mouse */
+            .conteudo ol li:hover::before {
+                transform: scale(1.2); /* Aumenta o círculo em 20% */
+            }
+
+            /* Estilizando os links dentro de .conteudo */
+            .conteudo a {
+                color: #4F0057; /* Cor personalizada para os links dentro da seção conteúdo */
+                text-decoration: none; /* Remove o sublinhado do link */
+                transition: color 0.3s ease; /* Transição suave para a cor ao passar o mouse */
+            }
+
+            /* Estilo do link ao passar o mouse dentro de .conteudo */
+            .conteudo a:hover {
+                color: #008C8C; /* Cor que aparece ao passar o mouse */
+                text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+            }
+
+            #navegacao-links {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 30px;
+                font-size: 1.1em;
+            }
+
+            #navegacao-links a {
+                color: #4F0057;
+                text-decoration: none;
+                font-weight: 600;
+                margin: 0 10px;
+                transition: color 0.3s;
+            }
+
+            #navegacao-links a:hover {
+                color: #292929;
+                text-decoration: underline;
+            }
+
+            #rodape {
+                background-color: #4F0057;
+                text-align: center;
+                padding: 20px 10px;
+                color: white;
+                font-size: 0.9em;
+            }
+
+            #rodape p {
+                margin: 5px 0;
+            }
+
+            #rodape a {
+                color: #ffffff;
+                text-decoration: underline;
+                font-weight: 500;
+            }
+
+            #rodape a:hover {
+                color: #cccccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="site">
+            <section id="topo">
+        <h1>Cases de Sucesso da IsX Consulting</h1>
+            </section>
+            <section class="conteudo">
+                <section class="conteudo">
+                    <ol>
+                        <li>
+                            <a href="https://hazeshift.com.br/historias/como-fizemos-a-semana-4-dias-haze-shift/">
+                                Transformando o Futuro do Trabalho: Nossa Jornada com a Semana de 4 Dias
+                            </a>
+                            <p>
+                                Em 2023, a Haze Shift, junto com a Isabela Ximenes da IsX Consulting, abraçou o desafio de reimaginar o futuro do trabalho ao adotar a Semana de 4 Dias (4DW), integrando-se ao primeiro projeto piloto da 4 Day Week Brasil.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://hazeshift.com.br/historias/modelo-unfix-haze-shift/">
+                                unFIX na Prática: Como a Haze Shift Revolucionou a Estrutura Organizacional para Aumentar Agilidade e Colaboração
+                            </a>
+                            <p>
+                                Desde 2023, a Haze Shift, junto com a Isabela Ximenes da Is Consulting, tem impulsionado a inovação em sua estrutura organizacional por meio do unFIX, um modelo flexível que substitui hierarquias tradicionais por tripulações autônomas e fóruns estratégicos. <br> 
+                                Essa mudança foi impulsionada pela necessidade de adaptar-se rapidamente ao mercado, promovendo autonomia, colaboração e eficiência operacional.<br>
+                                Hoje, com dois anos de implementação, os resultados são visíveis: equipes mais ágeis, maior clareza nos fluxos de trabalho e um modelo de gestão mais sustentável.
+                            </p>
+                        </li>
+                        <li>
+                            <a href="https://hazeshift.com.br/historias/academy-hack-ambev-tech/?portfolioCats=3%2C2%2C5%2C4">
+                                Academy Hack Ambev Tech: conheça este desafio de inovação aberta
+                            </a>
+                            <p>
+                                Uma das maiores indústrias cervejeiras do planeta, a Ambev tem boa parte de suas operações digitalizadas e demanda rotineiramente por soluções inovadoras.<br>
+                                Por isso, a companhia buscou, por meio de seu hub de tecnologia e inovação, a Ambev Tech, ampliar ainda mais seu relacionamento com universidades e atrair talentos de graduação e pós-graduação das áreas de tecnologia, computação, programação e correlatas.<br><br>
+                                Para atender a essa demanda, a Ambev Tech resolveu apostar em novos projetos de inovação aberta. <br>
+                                Para apoiar nessa ação externa de promoção do relacionamento com o ecossistema universitário, nós da Haze Shift em parceira com a IsX, auxiliamos a empresa na co-criação de um novo programa.
+                            </p>
+                            <center>
+                                <img src="assets/ambev-tech-academy-hack-predio-scaled.jpeg" width="500px" height="300px">
+                            </center>
+                        </li>
+                    </ol>                
+             </section>
+             <section id="navegacao-links">
+                <a href="servicos.html">Conheça nossos Serviços</a> |
+                <a href="index.html">Voltar para a Home</a>
+            </section>
+            <section id="rodape">
+                <p>© 2025 IsX Consulting | Todos os direitos reservados</p>
+                <p>Entre em contato conosco: <a href="mailto:contato@isxconsulting.com.br">contato@isxconsulting.com.br</a></p>
+                <p>Conecte-se comigo no <a href="https://www.linkedin.com/in/isabelaximenes/" target="_blank">LinkedIn</a></p>
+            </section>          
+        </div>
+    </body>
+</html>
